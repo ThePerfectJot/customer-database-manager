@@ -29,8 +29,6 @@ http.createServer((request, response) => {
         const responseBody = { headers, method, url, body };
         response.write(JSON.stringify(responseBody));
 
-        response.write('<html><body><h1>=== Area: Root ===</h1></body></html>')
-
         response.end();
         // END OF NEW STUFF
 
